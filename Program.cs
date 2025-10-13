@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using leetcode.medium;
+
+namespace leetcode;
+
+public static class Program
+{
+    public static void Main()
+    {
+        var easySolver = new easy.Solution();
+        var mediumSolver = new medium.Solution();
+        // var hardSolver = new hard.Solution();
+
+        var result = easySolver.LongestCommonPrefix(["flower", "flow", "flight"]);
+        Console.WriteLine(result);
+    }
+}

@@ -7,10 +7,10 @@ public static class Program
     public static void Main()
     {
         var easySolver = new easy.Solution();
-        var mediumSolver = new medium.Solution();
+        // var mediumSolver = new medium.Solution();
         // var hardSolver = new hard.Solution();
 
-        var result = easySolver.LongestCommonPrefix(["flower", "flow", "flight"]);
+        var result = easySolver.IsValid("()[]{}");
         Console.WriteLine(result);
     }
 }

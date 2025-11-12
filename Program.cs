@@ -10,7 +10,7 @@ public static class Program
         // var mediumSolver = new medium.Solution();
         // var hardSolver = new hard.Solution();
 
-        var result = easySolver.IsValid("()[]{}");
+        var result = easySolver.RemoveDuplicates([1,1,2]);
         Console.WriteLine(result);
     }
 }

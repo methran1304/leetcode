@@ -4,10 +4,10 @@ public partial class Solution
 {
     public int RemoveDuplicates(int[] nums)
     {
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            int currentElement = nums[i];
-            int j = i + 1;
+            var currentElement = nums[i];
+            var j = i + 1;
             while (j < nums.Length && nums[j] == currentElement)
             {
                 j++;

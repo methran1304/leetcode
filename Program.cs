@@ -1,4 +1,6 @@
-﻿using leetcode.medium;
+﻿using System.IO.Pipelines;
+using System.Security.Cryptography.X509Certificates;
+using leetcode.medium;
 
 namespace leetcode;
 
@@ -10,13 +12,18 @@ public static class Program
         var solver = new medium.Solution();
         // var solver = new hard.Solution();
 
-        int[] arr = [1,2,3,4,5,6,7];
+        IList<IList<int>> result = solver.Subsets([1, 2, 3]);
 
-        solver.Rotate(arr, 3);
-
-        foreach (int i in arr)
+        foreach (var subset in result)
         {
-            Console.WriteLine(i);
+            Console.Write("[ ");
+            foreach (var element in subset)
+            {
+                Console.Write($"{element} ");
+            }
+            Console.Write("], ");
         }
+
+        Console.Write("\n");
     }
 }
